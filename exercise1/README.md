@@ -15,3 +15,4 @@ for i in a:
 numpy_array=np.array(num_list)
 print(numpy_array)
 #print(s)   
+#dont forget int list(follow the v,also change the num_list)
