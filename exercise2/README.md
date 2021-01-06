@@ -16,6 +16,18 @@ numpy_array=np.array(num_list)
 #print(numpy_array)
 g = np.array([[1,0,0,0,0,1,1,0,0],[0,1,0,0,0,1,0,1,0],[0,0,1,0,0,0,1,1,0],[0,0,0,1,0,1,1,1,0],[0,0,0,0,1,1,0,0,1]])
 h = np.array([[1,1,0,1,1,1,0,0,0],[1,0,1,1,0,0,1,0,0],[0,1,1,1,0,0,0,1,0],[0,0,0,0,1,0,0,0,1]])
-print(np.dot(h,np.transpose(g))%2)
-#print(v)
-
+print('H*Gt',np.dot(h,np.transpose(g))%2)
+message=[]
+w=''
+f=open("message_to_send.txt","w")
+for i in range(200):
+ message=np.array(numpy_array[5*i:5*i+5])
+ coded = np.dot(message,g)%2
+ for i in coded:
+  a=str(coded[i])
+  w=w+a
+ #coded=str(coded)
+f.write(w)
+print(message)
+print(coded)
+f.close()
