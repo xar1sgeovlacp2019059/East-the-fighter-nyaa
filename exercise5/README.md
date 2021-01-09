@@ -34,7 +34,7 @@ for choice in range(3):
     else:
      message[error_pos-1]=0
      
-  for x in range(9):
+  for x in range(5):
    w=w+str(message[x])
     
  if choice==0:
