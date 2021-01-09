@@ -7,9 +7,9 @@ for choice in range(3):
  w=''
  if choice==0:
   f=open("received_message1.txt","r")
- if choice==1:
+ elif choice==1:
   f=open("received_message2.txt","r")
- if choice==2:
+ elif choice==2:
   f=open("received_message2.txt","r")
   
  received_message=f.read()
@@ -22,17 +22,13 @@ for choice in range(3):
   decoded = np.dot(h,message)%2#h,message
   #print(decoded)
   if np.all((decoded==0)) == False:
-   error_pos=0
-   for i in range(4):
-    if decoded[i-1]==1:
-     a=pow(2,3-i)
-     error_pos=error_pos+a
-   if error_pos <= 9:
-   
-    if(message[error_pos-1]==0):
-     message[error_pos-1]=1
-    else:
-     message[error_pos-1]=0
+   print(message)
+   for i in range(h.shape[1]):
+    if np.array_equal(h[:,i] , decoded):
+     #print('error in position: ',i)
+     message[i] = (message[i] + 1)%2
+     print(message)
+     break
      
   for x in range(5):
    w=w+str(message[x])
