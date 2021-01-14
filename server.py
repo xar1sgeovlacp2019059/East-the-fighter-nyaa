@@ -34,12 +34,12 @@ def main():
         
         
         iv=c.recv(16)
-        print(iv)
+        
         encmessage=c.recv(1024)
         AESdec=AES.new(AESkey,AES.MODE_CBC,iv)
         c.send('we are ready to decrypt your message'.encode())
         decmessage=AESdec.decrypt(encmessage)
-        print(decmessage)
+        print(decmessage.decode())
         c.send('Your message is decrypted :)'.encode())
         
         
