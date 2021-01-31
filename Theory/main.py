@@ -1,7 +1,7 @@
-import numpy as np
+iimport numpy as np
 
 d=np.array([[0,0,0,0],[0,0,0,1],[0,0,1,0],[0,0,1,1],[0,1,0,0],[0,1,0,1],[0,1,1,0],[0,1,1,1],[1,0,0,0],[1,0,0,1],[1,0,1,0],[1,0,1,1],[1,1,0,0],[1,1,0,1],[1,1,1,0],[1,1,1,1]])
-
+#d=np.array([[0,0,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]])
 
 g=np.array([[1,0,0,0,0,1,1],[0,1,0,0,1,0,1],[0,0,1,0,1,1,0],[0,0,0,1,1,1,1]])
 I1=np.array([1,0,0])
@@ -31,28 +31,34 @@ while(np.all(hgt==0)==False):
  h3=np.insert(h3,4,I3,axis=0)
  h=np.array([h1,h2,h3])
  hgt=np.dot(h,np.transpose(g))%2
-print(h)
+#print(h)
 
 
-c=np.empty([16,7], dtype=int)
+c=np.empty([16,7], dtype=int)#check
 #print(c)
-for i in range(16):
+for i in range(16):# check
  ci=np.dot(d[i],g)%2
  c[i]=ci
  
-print(c)
-
-
-test=np.dot(c,np.transpose(h))%2
-print(test)
-#a=np.array([[1,2],[2,3],[0,1]])
-#b=np.array([[4,5],[7,3]])
-#print(np.dot(a,b))
-#a=np.array([1,2,3,4])
-#b=np.array([4,5])
-#a=np.array([1,2,3])
-#b=np.array([4,5,4])
-#b=a
-#c=np.array([a,b])
-#a=np.insert(a,0,b,axis=0)
 #print(c)
+syndroms=np.array([[0,0,0],[0,0,1],[0,1,0],[0,1,1],[1,0,0],[1,0,1],[1,1,0],[1,1,1]])
+parrity=np.array([0,0,0,0])
+
+#syndrom=np.insert(syndroms[4],0,parrity,axis=0)
+#print(syndrom)
+
+#test= c[0]+syndrom
+#test=np.dot(c,np.transpose(h))%2
+#print(test)
+
+complexArr=np.empty([16,7], dtype=int)#check
+#print(complexArr)
+for i in range(8):
+ #print(syndroms[i])
+ syndrom=np.insert(syndroms[i],0,parrity,axis=0)
+ print(syndrom)
+ for j in range(16):
+  complexArr[j]=(c[j]+syndrom)%2
+ print(complexArr)
+
+
