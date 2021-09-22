@@ -10,11 +10,11 @@
 | 8 | [Βήμα 8](#Bήμα-8) |
 | 9 | [Βήμα 9](#Bήμα-9) |
 | 10 | [Βήμα 10](#Bήμα-10) |
-| 11 | [Βήμα 11](#Βήμα-11)|
+| 11 | [Βήμα 11](#Βήμα-11) |
 
 # Βήμα 1
 
-Γειά σας
+
 
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%201.png">
@@ -24,30 +24,37 @@
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%202.png">
 </p>
+
 # Βήμα 3
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%203.png">
 </p>
+
 # Βήμα 4
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%204.png">
 </p>
+
 # Βήμα 5
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%205.png">
 </p>
+
 # Βήμα 6
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%206.png">
 </p>
+
 # Βήμα 7
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%207.png">
 </p>
+
 # Βήμα 8
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%208.png">
 </p>
+
 # Βήμα 9
 
 <p align="center">
