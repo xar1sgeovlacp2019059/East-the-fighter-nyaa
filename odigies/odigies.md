@@ -61,27 +61,41 @@
 </p>
 
 # Βήμα 7
+
+Κατεβήτε πρως τα κάτω και πατήστε μικρόφωνο
+
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%207.png">
 </p>
 
 # Βήμα 8
+
+Άμα το πατήσατε θα βρήσκεστε σε αυτή την σελλίδα 
+
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%208.png">
 </p>
 
 # Βήμα 9
 
+Επιλέξτε οι ιστότοποι να χρησιμοποιούν το μικρόφωνό σας.
+
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%209.png">
 </p>
 
 # Βήμα 10
+
+Σε περίπτωση που η σελλίδα "Veeva Engage" είναι στις επιλογές: Δεν επιτέπεται ναχρησιμοποιούν το μικρόφωνό σας, τότε πατήστε σε αυτήν στις επιλογές. Άν δεν είναι στις επιλογές ,τότε δεν χρειάζεται να συνεχίσεται στο επόμενο βήμα.
+
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%2010.png">
 </p>
 
 # Βήμα 11
+
+Αφού έχετε επιλέξει τα την εφαρμογή πηγένεται στις άδειες-> μικρόφωνο και επιλέξτε "Επιτρέπεται".
+
 <p align="center">
 <img src="https://github.com/xar1sgeovlacp2019059/East-the-fighter-nyaa/blob/main/collection/%CE%B2%CE%AE%CE%BC%CE%B1%2011.png">
 </p>
