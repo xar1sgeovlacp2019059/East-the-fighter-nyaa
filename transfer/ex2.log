@@ -1,0 +1,35 @@
+Script started on 2021-10-28 10:21:35+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="77" LINES="23"]
+[?2004h]0;lubuntu@lubuntu: ~[01;32mlubuntu@lubuntu[00m:[01;34m~[00m$ ls -lt
+[?2004ltotal 8
+-rw-rw-r-- 1 lubuntu lubuntu    0 Oct 28 10:21  ex2.log
+drwxrwxr-x 2 lubuntu lubuntu   60 Oct 28 10:15 [0m[01;34m'for east'[0m
+-rw-rw-r-- 1 lubuntu lubuntu 3337 Oct 28 10:14  ex1.log
+-rw-rw-r-- 1 lubuntu lubuntu  538 Oct 28 09:26  hello.log
+drwxrwxr-x 3 lubuntu lubuntu   60 Oct 28 09:19  [01;34msambashare[0m
+drwxr-xr-x 2 lubuntu lubuntu  140 Oct 27 21:11  [01;34mDesktop[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mDocuments[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mDownloads[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mMusic[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mPictures[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mPublic[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mTemplates[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mVideos[0m
+[?2004h]0;lubuntu@lubuntu: ~[01;32mlubuntu@lubuntu[00m:[01;34m~[00m$ ls -ltr
+[?2004ltotal 8
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [0m[01;34mVideos[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mTemplates[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mPublic[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mPictures[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mMusic[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mDownloads[0m
+drwxr-xr-x 2 lubuntu lubuntu   40 Oct 27 21:11  [01;34mDocuments[0m
+drwxr-xr-x 2 lubuntu lubuntu  140 Oct 27 21:11  [01;34mDesktop[0m
+drwxrwxr-x 3 lubuntu lubuntu   60 Oct 28 09:19  [01;34msambashare[0m
+-rw-rw-r-- 1 lubuntu lubuntu  538 Oct 28 09:26  hello.log
+-rw-rw-r-- 1 lubuntu lubuntu 3337 Oct 28 10:14  ex1.log
+drwxrwxr-x 2 lubuntu lubuntu   60 Oct 28 10:15 [01;34m'for east'[0m
+-rw-rw-r-- 1 lubuntu lubuntu    0 Oct 28 10:21  ex2.log
+[?2004h]0;lubuntu@lubuntu: ~[01;32mlubuntu@lubuntu[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2021-10-28 10:22:15+00:00 [COMMAND_EXIT_CODE="0"]

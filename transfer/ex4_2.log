@@ -1,0 +1,12 @@
+Script started on 2021-10-28 10:43:15+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="77" LINES="23"]
+[?2004h]0;lubuntu@lubuntu: ~[01;32mlubuntu@lubuntu[00m:[01;34m~[00m$ rm [K[K[Kdc[K[Kcd projects
+[?2004l[?2004h]0;lubuntu@lubuntu: ~/projects[01;32mlubuntu@lubuntu[00m:[01;34m~/projects[00m$ rm room2 room3 rooms/room5
+[?2004l[?2004h]0;lubuntu@lubuntu: ~/projects[01;32mlubuntu@lubuntu[00m:[01;34m~/projects[00m$ ls
+[?2004l[0m[01;31mchangelog.Debian.gz[0m  copyright  room1  [01;34mrooms[0m
+[?2004h]0;lubuntu@lubuntu: ~/projects[01;32mlubuntu@lubuntu[00m:[01;34m~/projects[00m$ cd ..[K[Krooms
+[?2004l[?2004h]0;lubuntu@lubuntu: ~/projects/rooms[01;32mlubuntu@lubuntu[00m:[01;34m~/projects/rooms[00m$ ls
+[?2004lroom1  room2  room4
+[?2004h]0;lubuntu@lubuntu: ~/projects/rooms[01;32mlubuntu@lubuntu[00m:[01;34m~/projects/rooms[00m$ c[Kexit
+[?2004lexit
+
+Script done on 2021-10-28 10:44:38+00:00 [COMMAND_EXIT_CODE="0"]
