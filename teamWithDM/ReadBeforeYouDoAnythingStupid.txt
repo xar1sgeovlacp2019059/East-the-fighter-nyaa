@@ -1,0 +1,125 @@
+Step 1: install build-essential
+
+sudo apt update
+sudo apt-get install build essential
+
+Step 2: make our program 
+
+gcc -o mycp main.c;
+
+Step 3: run it with file
+
+./mycp text.txt
+
+Step 4: delete the program
+
+rm ./hello
+
+
+That's all !!! 
+if you found this file useful make sure to thank me. If you find errors I'm sorry it wasn't easy copy everything letter by letter, but it's not gonna be a problem. 
+Also run every command (the lines below steps). We ran them from linux-lite
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ps: if you dare to do something stupid .... Em... I don't actually know why(wis -1) but my creator told me to threaten you with a rapier. He said this gonna work.
