@@ -7,7 +7,7 @@
 int main(int argc, char **argv){ // input: argc=argument counter, argv=argument vector, argv[0] is the name of the program, argv[1] is the name of first file the first file
  char ch;
  FILE *fp;
- //FILE *gp;
+ FILE *gp;
  if(argc <2){
  printf("give a filename\n");
  return 1;
@@ -19,10 +19,11 @@ int main(int argc, char **argv){ // input: argc=argument counter, argv=argument 
  }
 
  fp=fopen(argv[1],"r"); // open the file to read
+ gp=fopen(argv[2],"w");
  while((ch = fgetc(fp)) != EOF){ //until end of file
-   printf("%c",ch);// show every char
+   fprintf(gp,"%c",ch);// show every char
  }
-
+ fclose(gp);
  fclose(fp);
 
  return 0;
