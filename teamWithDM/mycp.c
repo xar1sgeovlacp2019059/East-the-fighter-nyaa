@@ -15,7 +15,7 @@ int main(int argc, char **argv){ // input: argc=argument counter, argv=argument 
  
  if((cbuff[0]=='-') && (cbuff[1]=='b')){
  
-  cbuff=memmover(cbuff, cbuff+2, strlen(cbuff));
+  cbuff=memmove(cbuff, cbuff+2, strlen(cbuff));
   buffsize= atoi(cbuff);
   i=i+1;
  }
