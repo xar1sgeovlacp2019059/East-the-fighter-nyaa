@@ -12,11 +12,11 @@ int mode(int i, char* cbuff){
  return i;
 }
 
-int buffsize(char* cbuff){
+int buffersize(char* cbuff){
 
  int buffsize;
  cbuff = memmove(cbuff, cbuff+2, strlen(cbuff)); // here we remove -b 
- buffize = atoi(cbuff); // make string to int
+ buffsize = atoi(cbuff); // make string to int
  
  return buffsize;
 }
@@ -40,7 +40,7 @@ int main(int argc, char **argv){ // input: argc=argument counter, argv=argument 
  i=mode(i,argv[1]); // the identifier(i) will show us if there is buffer mode or not
  if(i==2){
  
- buffsize=buffmode(argv[1]); // we set size of custom buffer
+ buffsize=buffersize(argv[1]); // we set size of custom buffer
  buff=malloc(sizeof(char) * buffsize);
  }
  
