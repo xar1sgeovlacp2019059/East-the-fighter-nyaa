@@ -40,7 +40,7 @@ int main(int argc, char **argv){ // input: argc=argument counter, argv=argument 
  i=mode(i,argv[1]); // the identifier(i) will show us if there is buffer mode or not
  if(i==2){
  
- buffsize=buffersize(argv[1]); // we set size of custom buffer
+ buffsize=buffersize(argv[1]); // we set size mof custom buffer
  buff=malloc(sizeof(char) * buffsize);
  }
  
