@@ -26,6 +26,8 @@ int main(int argc, char **argv){ // input: argc=argument counter, argv=argument 
 
  clock_t timing;
  int i=1; // identifier if i=2 -> buffer mode
+ char z='0';
+ int times=0;
  char* buff;
  int buffsize;
  int file1;
@@ -56,23 +58,35 @@ int main(int argc, char **argv){ // input: argc=argument counter, argv=argument 
  }
 
  if(i==2){ // copy the file with buffer mode
-  file1=open(argv[i], O_RDONLY); // readonly
-  file2=open(argv[i+1], O_WRONLY | O_CREAT , 0644); // write only | create if not exist write&read-read-read(owner-group-others)
- 
-  timing=clock();// time start
-  
-  while((readchar=read(file1,buff,buffsize)) > 0){ // read with buffer size
-   if((write(file2, buff, readchar)) > readchar){ // write with buffer
-    
-    return 0;// everything is ok
+  while(z=='0'){// edo
+   if(times>0){
+       buffsize=scanf("%d", buffsize);
+       buff=malloc(sizeof(char) * buffsize);
    }
-   bytes=bytes+readchar; //count bytes
-  }
-  bytes=bytes-1;
-  timing=clock() - timing;//timer stop
+   file1=open(argv[i], O_RDONLY); // readonly
+   file2=open(argv[i+1], O_WRONLY | O_CREAT , 0644); // write only | create if not exist write&read-read-read(owner-group-others)
+   
+   clock_t begin = clock();// time start
   
+   while((readchar=read(file1,buff,buffsize)) > 0){ // read with buffer size
+    if((write(file2, buff, readchar)) > readchar){ // write with buffer
+    
+     return 0;// everything is ok
+    }
+    bytes=bytes+readchar; //count bytes
+   }
+   bytes=bytes-1;
+   clock_t end = clock();//timer stop
+   double time = (double)(end - begin) / CLOCKS_PER_SEC;//calculate time
+  
+   printf("copied complete \n copied %d bytes for: %f seconds, with buffer size = %d\n", bytes, time, buffsize);
+
   close(file2);
   close(file1);
+  printf("Do you want to change buffer size? \n print 0 to do it again anything else to finish the program: ");
+  z=scanf("%c",z);
+ // if(z != '0')
+  }// edo
  }
  
  if(i==1){
