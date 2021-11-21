@@ -67,7 +67,7 @@ int main(int argc, char **argv){ // input: argc=argument counter, argv=argument 
    file2=open(argv[i+1], O_WRONLY | O_CREAT , 0644); // write only | create if not exist write&read-read-read(owner-group-others)
    
    clock_t begin = clock();// time start
-  
+   
    while((readchar=read(file1,buff,buffsize)) > 0){ // read with buffer size
     if((write(file2, buff, readchar)) > readchar){ // write with buffer
     
@@ -78,13 +78,14 @@ int main(int argc, char **argv){ // input: argc=argument counter, argv=argument 
    bytes=bytes-1;
    clock_t end = clock();//timer stop
    double time = (double)(end - begin) / CLOCKS_PER_SEC;//calculate time
-  
+   
    printf("copied complete \n copied %d bytes for: %f seconds, with buffer size = %d\n", bytes, time, buffsize);
-
-  close(file2);
-  close(file1);
-  printf("Do you want to change buffer size? \n print 0 to do it again anything else to finish the program: ");
-  z=scanf("%c",z);
+   
+   close(file2);
+   close(file1);
+   printf("Do you want to change buffer size? \n print 0 to do it again anything else to finish the program: ");
+   z=scanf("%c",z);
+   times=times+1;
  // if(z != '0')
   }// edo
  }
