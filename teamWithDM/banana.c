@@ -45,6 +45,7 @@ int main(int argc, char* argv[]){
    char *ar1=malloc(sizeof(char)+1);
    char *ar2=malloc(sizeof(char)+1);
    char *full=malloc(sizeof(char)+2);
+   char *file=malloc(sizeof(char)+1);
    strcpy(full,"s/");
    char *buffer;
    char command[512];
@@ -65,15 +66,15 @@ int main(int argc, char* argv[]){
      
      free(buffer);
   }
-   printf("%s, %s, %s\n",full,ar1, ar2);
+   //printf("%s, %s, %s\n",full,ar1, ar2);
    strcat(ar1,ar2);
-   printf("%s \n",ar1);
+   //printf("%s \n",ar1);
    free(ar2);
    strcat(full,ar1);
-   //free(ar1);
-   printf("%s \n",full);
+   
+   //printf("%s \n",full);
   //new  
-  execlp("sed", "sed",full,"one.txt", NULL);
+  execlp("sed", "sed","-e","s/^/Data received through pipe /g","-e",full,file, NULL);
  }
  close(fd[0]);
  close(fd[1]);
