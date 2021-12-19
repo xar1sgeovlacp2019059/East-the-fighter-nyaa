@@ -7,7 +7,7 @@
 #include <time.h>
 
 int main(int argc, char* argv[]){
- int fd[2];
+ int fd[2]; 
  if (pipe(fd) ==-1){
   return 1;
  }
@@ -37,10 +37,9 @@ int main(int argc, char* argv[]){
  }
  close(fd[0]);
  close(fd[1]);
+ 
  waitpid(pid1, NULL, 0);
  waitpid(pid2, NULL, 0);
  
- 
- //execlp("gedit","gedit",argv[1],NULL );
  return 0;
 }
