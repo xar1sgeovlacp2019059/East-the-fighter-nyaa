@@ -52,7 +52,9 @@ int main(int argc, char* argv[]){
    for(i = 1; i < argc; i++){
      buffer = malloc(strlen(argv[i]) + 5);
      strcpy(buffer,argv[i]);
-     if(i==2){
+     if(i==1){
+      strcpy(file,buffer);
+     }else if(i==2){
       strcat(buffer,"/");
       strcpy(ar1,buffer);
       
@@ -61,8 +63,6 @@ int main(int argc, char* argv[]){
       strcpy(ar2,buffer);
      }
      
-     //printf("%s , %d\n",buffer, i);//this
-     //strcpy(full,buffer);
      free(buffer);
   }
    printf("%s, %s, %s\n",full,ar1, ar2);
