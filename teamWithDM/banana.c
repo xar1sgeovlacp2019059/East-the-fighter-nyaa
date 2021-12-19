@@ -16,11 +16,19 @@ int main(int argc, char* argv[]){
   return 2; 
  }
  
- if (pid1 == 0){ // process of
-  dup2(fd[1], STDOUT_FILENO);
+ if (pid1 == 0){ // process(child) cat
+  dup2(fd[1], STDOUT_FILENO);// 
   close(fd[0]);
   close(fd[1]);
-  execlp("cat","cat","one.txt", NULL);
+  
+  char* fl1 = (char*)NULL;// 
+  int len1 = strlen(argv[1]); 
+  
+  if ((fl1 = malloc(len1+1)) != NULL){
+    bzero(fl1, len1+1);
+    strncpy(fl1, argv[1], len1);
+   }
+  execlp("cat","cat",fl1, NULL);
  
  }
  
@@ -33,7 +41,39 @@ int main(int argc, char* argv[]){
   dup2(fd[0], STDIN_FILENO);
   close(fd[0]);
   close(fd[1]);
-  execlp("sed", "sed", "s/dao/tia/g", NULL);
+  // new
+   char *ar1=malloc(sizeof(char)+1);
+   char *ar2=malloc(sizeof(char)+1);
+   char *full=malloc(sizeof(char)+2);
+   strcpy(full,"s/");
+   char *buffer;
+   char command[512];
+   int i = 1;
+   for(i = 1; i < argc; i++){
+     buffer = malloc(strlen(argv[i]) + 5);
+     strcpy(buffer,argv[i]);
+     if(i==2){
+      strcat(buffer,"/");
+      strcpy(ar1,buffer);
+      
+     }else if(i==3){
+      strcat(buffer,"/g");
+      strcpy(ar2,buffer);
+     }
+     
+     //printf("%s , %d\n",buffer, i);//this
+     //strcpy(full,buffer);
+     free(buffer);
+  }
+   printf("%s, %s, %s\n",full,ar1, ar2);
+   strcat(ar1,ar2);
+   printf("%s \n",ar1);
+   free(ar2);
+   strcat(full,ar1);
+   //free(ar1);
+   printf("%s \n",full);
+  //new  
+  execlp("sed", "sed",full,"one.txt", NULL);
  }
  close(fd[0]);
  close(fd[1]);
