@@ -20,6 +20,8 @@ That's all !!!
 if you found this file useful make sure to thank me. If you find errors I'm sorry it wasn't easy copy everything letter by letter, but it's not gonna be a problem. 
 Also run every command (the lines below steps). We ran them from linux-lite
 
+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
+
 
 
 
